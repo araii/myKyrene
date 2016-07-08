@@ -1,0 +1,19 @@
+{
+  "name": "mykyrene",
+  "version": "1.0.0",
+  "description": "node.js server experiment",
+  "main": "index.js",
+  "scripts": {
+    "test": "hahaha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araii/myKyrene.git"
+  },
+  "author": "Pearce Arai <pearcearai@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/araii/myKyrene/issues"
+  },
+  "homepage": "https://github.com/araii/myKyrene#readme"
+}
