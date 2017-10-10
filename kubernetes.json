@@ -1,0 +1,35 @@
+{
+  "apiVersion": "v1",
+  "kind": "ReplicationController",
+  "metadata": {
+    "generateName": "mykyrene-"
+  },
+  "spec": {
+    "replicas": 1,
+    "selector": {
+      "service_name":"mykyrene"
+    },
+    "template": {
+      "metadata": {
+        "generateName": "mykyrene-pod-",
+        "labels": {
+          "service_name":"mykyrene"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "mykyrene-container",
+            "image": "gcr.io/mykyrene-1469771940830/cluster-1:1",
+            "ports": [
+              {
+                "containerPort": 3000,
+                "protocol": "TCP"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

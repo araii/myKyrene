@@ -4,7 +4,8 @@
   "description": "node.js server experiment",
   "main": "index.js",
   "scripts": {
-    "test": "hahaha"
+    "test": "hahaha",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/araii/myKyrene/issues"
   },
-  "homepage": "https://github.com/araii/myKyrene#readme"
+  "homepage": "https://github.com/araii/myKyrene#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-generator": "^4.13.4"
+  }
 }
